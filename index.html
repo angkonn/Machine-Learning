@@ -1,1 +1,52 @@
 <p>A pargraph</p>
+
+# Setup
+git --version                          # Check Git version
+git config --global user.name "Name"   # Set name
+git config --global user.email "Email" # Set email
+
+# Repository
+git init                               # Initialize repo
+git clone <repo-url>                   # Clone repo
+
+# Staging & Committing
+git add <file>                         # Stage file
+git add .                              # Stage all files
+git commit -m "Message"                # Commit changes
+git commit -am "Message"               # Stage & commit tracked
+
+# Status & Logs
+git status                             # Show status
+git log                                # Show commits
+git log --oneline                      # Compact log
+
+# Branching
+git branch                             # List branches
+git branch <name>                      # Create branch
+git checkout <name>                    # Switch branch
+git checkout -b <name>                 # Create & switch branch
+git merge <name>                       # Merge branch
+
+# Remote
+git remote -v                          # List remotes
+git remote add <name> <url>            # Add remote
+git pull                               # Fetch & merge remote changes
+git push                               # Push changes
+git push -u origin <branch>            # Push and set upstream
+
+# Undoing
+git reset <file>                       # Unstage file
+git reset --hard                       # Reset to last commit
+git checkout -- <file>                 # Discard file changes
+git revert <commit>                    # Undo commit by new commit
+
+# Stash
+git stash                              # Save changes
+git stash list                         # List stashes
+git stash apply                        # Apply stash
+git stash drop                         # Remove stash
+
+# Misc
+git diff                               # Show differences
+git clean -f                           # Remove untracked files
+git tag <tag-name>                     # Create tag
